@@ -22,7 +22,6 @@ C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Prof
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Professeurs.TagHelpers.output.cache
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Professeurs.RazorCoreGenerate.cache
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\mrdja\source\repos\Professeurs\Professeurs\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_sidebar.cshtml.g.cs
