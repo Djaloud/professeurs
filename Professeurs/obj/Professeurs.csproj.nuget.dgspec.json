@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mrdja\\source\\repos\\Professeurs\\Professeurs\\Professeurs.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mrdja\\source\\repos\\Professeurs\\Professeurs\\Professeurs.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mrdja\\source\\repos\\Professeurs\\Professeurs\\Professeurs.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj",
         "projectName": "Professeurs",
-        "projectPath": "C:\\Users\\mrdja\\source\\repos\\Professeurs\\Professeurs\\Professeurs.csproj",
-        "packagesPath": "C:\\Users\\mrdja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mrdja\\source\\repos\\Professeurs\\Professeurs\\obj\\",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\mrdja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,6 +45,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

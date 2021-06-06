@@ -1,9 +1,131 @@
 ﻿@{
     ViewBag.Title = "Trombinoscope";
-  
+
 }
-<h1>@ViewData["Title"]</h1>
-<div class="text-center">
-    <h1 class="display-4">Bienvenue dans la partie trombinoscope.</h1>
+
+
+
+<div class="header bg-default pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+        <div class="header-body">
+            <!-- Card stats -->
+            
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <select class="form-control col-xl-12 col-lg-12" aria-label="Selectionner votre classe">
+                                <option selected>Mes classes</option>
+                                <option value="1">Classe 1</option>
+                                <option value="2">Classe 2</option>
+                                <option value="3">Classe 3</option>
+                            </select>
+                        </div>
+                        <div class="col text-center">
+                            <button type="submit" value="submit" class="btn btn-primary col-xl-4 col-lg-4">Copy emails</button>
+                        </div>
+                    </div>
+                </form>
+            
+        </div>
+    </div>
 </div>
+
+<div class="container-fluid mt--7">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col">
+                    <h3>@ViewData["Title"]</h3>
+                </div>
+                <div class="col">
+                    <div class="input-group input-group-alternative input-group-merge">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Search" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4 ">
+                    <div class="card card-stats mb-4 mb-xl-0 ">
+                        <div class="card-body">
+                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg"  /></a>
+                            <h3 class="text-center">Naoufal Nokri</h3>
+                            <h6 class="text-center">4eme annee Genie Informatique</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
+                    <div class="card card-stats mb-4 mb-xl-0 ">
+                        <div class="card-body">
+                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
+                            <h3 class="text-center">Naoufal Nokri</h3>
+                            <h6 class="text-center">4eme annee Genie Informatique</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
+                    <div class="card card-stats mb-4 mb-xl-0 ">
+                        <div class="card-body">
+                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
+                            <h3 class="text-center">Naoufal Nokri</h3>
+                            <h6 class="text-center">4eme annee Genie Informatique</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
+                    <div class="card card-stats mb-4 mb-xl-0 ">
+                        <div class="card-body">
+                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
+                            <h3 class="text-center">Naoufal Nokri</h3>
+                            <h6 class="text-center">4eme annee Genie Informatique</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
+                    <div class="card card-stats mb-4 mb-xl-0 ">
+                        <div class="card-body">
+                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
+                            <h3 class="text-center">Naoufal Nokri</h3>
+                            <h6 class="text-center">4eme annee Genie Informatique</h6>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4>Details</h4>
+                            </div>
+                            <div class="container">
+                                <label>Nom : Nokri</label> <br />
+                                <label>Prenom : Naoufal</label><br />
+                                <label>Age : 21</label><br />
+                                <label>Filiere : G.Info</label><br />
+                                <label>Annee : 4eme annee</label>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
