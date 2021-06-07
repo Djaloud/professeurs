@@ -1,10 +1,80 @@
 ﻿@{
-    ViewBag.Title = "Acceuil";
+    ViewBag.Title = "Upload Pdf";
     
 }
 <h1>@ViewData["Title"]</h1>
-<div class="text-center">
-    <h1 class="display-4">Bienvenue dans la page d'ajout de fichier..</h1>
-</div>
 
+<form method="post" action="../Controller/GestionAjoutProf.php">
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="type_semestre">
+                Choix de semestre:
+                <select class="form-control" name="type_semestre" required>
+
+                    <optgroup label="Choix du semestre...">
+                        <option value="a">Semestre 1</option>
+                        <option value="b">Semestre 2</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label for="type_evaluation">
+                Choix d'evaluation:
+                <select class="form-control" name="type_evaluation" required>
+                    <optgroup label="Choix du type d'evaluation">
+                        <option value="a">DS1</option>
+                        <option value="b">DS2</option>
+                        <option value="b">Rattrapage</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+
+        <div class="col-md-6 mb-3">
+            <label for="type_evaluation">
+                Choix de la classe:
+                <select class="form-control" name="type_evaluation" required>
+                    <optgroup label="Choix de la classe">
+                        <option value="a">C#</option>
+                        <option value="b">Gouvernance</option>
+                        <option value="b">Linux</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+
+
+        <div class="col-md-6 mb-3">
+            <label for="type_evaluation">
+                Choix du module:
+                <select class="form-control" name="type_evaluation" required>
+                    <optgroup label="Choix de module">
+                        <option value="a">C#</option>
+                        <option value="b">Gouvernance</option>
+                        <option value="b">Linux</option>
+                    </optgroup>
+                </select>
+            </label>
+        </div>
+
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-12 mb-3">
+            <label for="tel">Upload fichier</label>
+            <input type="file" class="form-control" name="tel" required>
+
+        </div>
+
+    </div>
+
+
+    <button class="btn btn-primary" style="margin: auto;width: 150px;margin-top: 40px;" type="submit" name="Ajouter">Valider</button>
+</form>
 
