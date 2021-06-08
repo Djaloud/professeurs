@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ namespace Professeurs.Models
     public class Etudiant
     {
         [Key]
-        public int apogee {get;set;}
+        public int apogee { get; set; }
         public string massar { get; set; }
         public string email { get; set; }
         public string cin { get; set; }
@@ -28,7 +29,8 @@ namespace Professeurs.Models
         public string mother_job { get; set; }
         public string parents_phone { get; set; }
         public string annee { get; set; }
-        public string filiere { get; set; }
+        public int id_filiere { get; set; } 
+        public Filiere filiere { get; set; }
         public string type_bac { get; set; }
         public string mention_bac { get; set; }
         public string annee_bac { get; set; }
@@ -44,5 +46,6 @@ namespace Professeurs.Models
         public string password { get; set; }
         public string sexe { get; set; }
 
+       
     }
 }

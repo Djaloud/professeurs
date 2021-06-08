@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Professeurs",
-    "\\Professeurs\\Views",
-    "\\Professeurs\\Views\\Home"
+    "\\Professeurs"
   ],
-  "SelectedNode": "\\Professeurs\\Views\\Home\\Trombinoscope.cshtml",
+  "SelectedNode": "\\Professeurs.sln",
   "PreviewInSolutionExplorer": false
 }

@@ -49,62 +49,20 @@
         </div>
         <div class="card-body">
             <div class="row">
+                @foreach (var etudiant in ViewData["etudiants"] as List<Etudiant>)
+                {
+                    string id = etudiant.ToString();
+                    string appelId = "#" + id;
+
                 <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4 ">
                     <div class="card card-stats mb-4 mb-xl-0 ">
                         <div class="card-body">
                             <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg"  /></a>
-                            <h3 class="text-center">Naoufal Nokri</h3>
-                            <h6 class="text-center">4eme annee Genie Informatique</h6>
-
+                            <h3 class="text-center">@etudiant.firstname_fr @etudiant.lastname_fr</h3>
+                            <h6 class="text-center">@etudiant.annee @etudiant.filiere</h6>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
-                    <div class="card card-stats mb-4 mb-xl-0 ">
-                        <div class="card-body">
-                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
-                            <h3 class="text-center">Naoufal Nokri</h3>
-                            <h6 class="text-center">4eme annee Genie Informatique</h6>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
-                    <div class="card card-stats mb-4 mb-xl-0 ">
-                        <div class="card-body">
-                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
-                            <h3 class="text-center">Naoufal Nokri</h3>
-                            <h6 class="text-center">4eme annee Genie Informatique</h6>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
-                    <div class="card card-stats mb-4 mb-xl-0 ">
-                        <div class="card-body">
-                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
-                            <h3 class="text-center">Naoufal Nokri</h3>
-                            <h6 class="text-center">4eme annee Genie Informatique</h6>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-12 col-xl-3 col-sm-6 col-lg-3 col-md-4 mt-4">
-                    <div class="card card-stats mb-4 mb-xl-0 ">
-                        <div class="card-body">
-                            <a class="stretched-link" href="#" data-target="#modal" data-toggle="modal"><img src="~/assets/img/theme/angular.jpg" /></a>
-                            <h3 class="text-center">Naoufal Nokri</h3>
-                            <h6 class="text-center">4eme annee Genie Informatique</h6>
-
-                        </div>
-                    </div>
-
-                </div>
-
                 <div class="modal" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -112,17 +70,16 @@
                                 <h4>Details</h4>
                             </div>
                             <div class="container">
-                                <label>Nom : Nokri</label> <br />
-                                <label>Prenom : Naoufal</label><br />
-                                <label>Age : 21</label><br />
-                                <label>Filiere : G.Info</label><br />
-                                <label>Annee : 4eme annee</label>
+                                <label>Nom : @etudiant.lastname_fr</label> <br />
+                                <label>Prenom : @etudiant.firstname_fr</label><br />
+                                <label>Filiere :@etudiant.filiere</label><br />
+                                <label>Annee :@etudiant.annee</label>
                                 <br />
                             </div>
                         </div>
                     </div>
                 </div>
-
+                }
             </div>
         </div>
     </div>

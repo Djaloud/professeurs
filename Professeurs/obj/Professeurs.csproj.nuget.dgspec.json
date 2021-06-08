@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj": {}
+    "C:\\Users\\user\\source\\repos\\professeurs3\\Professeurs\\Professeurs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj": {
+    "C:\\Users\\user\\source\\repos\\professeurs3\\Professeurs\\Professeurs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\professeurs3\\Professeurs\\Professeurs.csproj",
         "projectName": "Professeurs",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\Professeurs.csproj",
+        "projectPath": "C:\\Users\\user\\source\\repos\\professeurs3\\Professeurs\\Professeurs.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\professeurs3\\Professeurs\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\professeurs3\\Professeurs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -46,9 +46,19 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
