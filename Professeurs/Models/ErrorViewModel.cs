@@ -1,5 +1,6 @@
 using System;
 
+
 namespace Professeurs.Models
 {
     public class ErrorViewModel
